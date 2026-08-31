@@ -1,0 +1,33 @@
+{
+  "figma": {
+    "fileKey": "X2Os31gFTJ8oVP3iToHT8b",
+    "desktopNode": "1:2",
+    "mobileNode": "1:78"
+  },
+  "typography": {
+    "family": "Inter",
+    "styles": ["Regular", "Semi Bold", "Bold"],
+    "sizesPx": [11, 12, 13, 14, 16, 17, 18, 21, 22, 25, 26, 44, 54, 74]
+  },
+  "colors": {
+    "canvas": "#F6F2E6",
+    "ink": "#141311",
+    "white": "#FFFFFF",
+    "surface": "#FEFBF2",
+    "brandTerracotta": "#A8381A",
+    "brandRed": "#BD2917",
+    "green": "#2E4D29",
+    "foodOrange": "#D66E33",
+    "graphiteWarm": "#403D36",
+    "foodBrownLight": "#CC753D",
+    "foodTan": "#C27D47",
+    "foodBrown": "#B86E2E",
+    "foodGold": "#F29E40",
+    "borderWarm": "#E5E0D1",
+    "mutedInk": "#4D473D"
+  },
+  "notes": {
+    "status": "Extracted from the current Figma concept. Food image colors are placeholders and are not production brand tokens.",
+    "implementation": "Prefer semantic CSS variables rather than hard-coding Figma palette values directly into components."
+  }
+}
