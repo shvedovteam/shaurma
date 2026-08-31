@@ -24,7 +24,7 @@ describe('admin backoffice', () => {
 
     await user.click(screen.getByRole('button', { name: /#1048/ }))
     expect(screen.getAllByText('#1048').length).toBeGreaterThan(1)
-    expect(screen.getByText('Абовяна, 18 · кв. 7')).toBeInTheDocument()
+    expect(screen.getAllByText('Абовяна, 18 · кв. 7').length).toBeGreaterThan(1)
   })
 
   it('renders the full order details route', () => {
