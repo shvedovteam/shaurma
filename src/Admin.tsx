@@ -322,6 +322,14 @@ function OrderDrawer({ order, onMoveNext }: { order: AdminOrder; onMoveNext: (or
         {order.scheduledFor && <span className="countdown-pill">через 32 мин</span>}
       </div>
 
+      <a
+        className="secondary-admin-action"
+        href={`/admin/order/${order.id}`}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
+      >
+        Открыть полную карточку →
+      </a>
+
       <section className="drawer-section">
         <h3>Состав</h3>
         {order.items.map((item) => <p className="drawer-item" key={item.name}>{item.quantity} × {item.name}</p>)}
