@@ -23,7 +23,7 @@ describe('ordering flow', () => {
 
     await user.click(screen.getByRole('button', { name: 'Добавить Шаурма с курицей' }))
     await user.click(screen.getByRole('button', { name: 'Открыть корзину' }))
-    await user.click(screen.getByLabelText('Ко времени'))
+    await user.click(screen.getByRole('radio', { name: /Ко времени/ }))
 
     const timeInput = screen.getByLabelText('Время доставки')
     expect(timeInput).toBeInTheDocument()
