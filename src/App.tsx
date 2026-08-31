@@ -6,7 +6,6 @@ type CartState = Record<string, number>
 type Fulfillment = 'delivery' | 'pickup'
 type View = 'storefront' | 'checkout' | 'success'
 
-const heroItem = menuItems.find((item) => item.id === 'chicken')!
 const shawarmas = menuItems.filter((item) => item.category === 'shawarma')
 const bakery = menuItems.filter((item) => item.category === 'bakery')
 
@@ -116,7 +115,7 @@ function App() {
           </div>
         </section>
 
-        <section className="bakery section-shell">
+        <section className="bakery section-shell" id="bakery">
           <div className="bakery-media">
             <img src="/images/bread-lavash-matnakash.webp" alt="Свежий лаваш и матнакаш" />
           </div>
@@ -135,7 +134,7 @@ function App() {
           </div>
         </section>
 
-        <section className="ordering section-shell">
+        <section className="ordering section-shell" id="delivery">
           <h2>Заказ — без лишних шагов.</h2>
           <div className="steps-grid">
             <article><span>01</span><h3>Выберите еду</h3><p>Добавляйте позиции прямо из меню.</p></article>
@@ -145,7 +144,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="footer section-shell">
+      <footer className="footer section-shell" id="contacts">
         <strong>GUMRI</strong>
         <span>Гюмри · доставка и самовывоз</span>
         <span>RU · HY</span>
