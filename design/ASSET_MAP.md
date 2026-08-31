@@ -26,6 +26,10 @@ Figma: https://www.figma.com/design/X2Os31gFTJ8oVP3iToHT8b
 - Do not mix these images with unrelated stock photography styles.
 - When real restaurant photos are supplied, replace the files in-place rather than changing component contracts.
 
+## Prototype asset status
+
+The current files in `design/assets/` are valid lightweight WebP exports for the prototype/pitch. They are intentionally optimized for repository size, not final production image quality. When the client supplies real photography, replace the files in-place with higher-resolution versions using the same filenames.
+
 ## Planned frontend location
 
 During implementation, copy or move these assets to a runtime-safe location such as `public/images/` while retaining their filenames. The files in `design/assets/` remain the design handoff originals.
